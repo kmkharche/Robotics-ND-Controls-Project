@@ -3,7 +3,7 @@
 
 # Author: Brandon Kinman
 
-#kp=17.0,ki=3.0,kd=10.0
+#kp=17.0,ki=3.0,kd=10.0, ki_max=10.0
 
 class PIDController:
     def __init__(self, kp = 0.0, ki = 0.0, kd = 0.0, max_windup = 10):
