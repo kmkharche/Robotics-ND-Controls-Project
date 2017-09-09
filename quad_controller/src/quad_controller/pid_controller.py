@@ -3,6 +3,7 @@
 
 # Author: Brandon Kinman
 
+#kp=17.0,ki=3.0,kd=10.0
 
 class PIDController:
     def __init__(self, kp = 0.0, ki = 0.0, kd = 0.0, max_windup = 10):
@@ -21,9 +22,9 @@ class PIDController:
         self.error_sum_ = 0.0
         self.last_error_ = 0.0
 
-        self.u_p=[0]
-        self.u_d=[0]
-        self.u_i=[0]
+        self.u_p = [0]
+        self.u_d = [0]
+        self.u_i = [0]
 
     def reset(self):
         #TODO
